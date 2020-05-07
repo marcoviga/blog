@@ -1,0 +1,96 @@
+/*
+    TODO misura del cellulare - settare la misura minima su schermo piccolo
+ */
+
+
+/*@media (min-width: 600px) {*/
+/*    #container {*/
+/*        display:grid;*/
+/*        grid-template-columns: 300px 300px 300px;*/
+/*        grid-template-rows: 250px 600px;*/
+/*        !* grid-template-columns: repeat(3, 1fr); *!*/
+/*        !* Initially each element has its own row for small screens *!*/
+/*        grid-template-areas:*/
+/*                "hd"*/
+/*                "sd"*/
+/*                "main"*/
+/*                "ft";*/
+/*        border: 2px solid yellow;*/
+/*    }*/
+/*}*/
+/*.content-container{*/
+/*    display: grid;*/
+/*    grid-template-columns: 50% 50%;*/
+/*    grid-template-rows: 50% 50%;*/
+/*}*/
+/*.content-container > *{*/
+/*    border: 2px solid aquamarine;*/
+/*}*/
+/*.box{*/
+/*    border: 1px solid red;*/
+/*    background: white;*/
+/*}*/
+/*.header{*/
+/*    grid-area:hd;*/
+/*}*/
+/*.footer{*/
+/*    grid-area:ft;*/
+/*}*/
+/*!*.sidebar{*!*/
+/*!*    grid-area:sd;*!*/
+/*!*}*!*/
+/*.content{*/
+/*    grid-area:main;*/
+/*}*/
+/*.post{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: "American Typewriter";*/
+/*    font-size: 2rem;*/
+/*}*/
+html{
+    font-size: 65%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Apple Braille", sans-serif;
+}
+.sidebar {
+    width: 8rem;
+    height: 100%;
+    background-color: darkgrey;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-icon {
+    margin-top: 3rem;
+    cursor: pointer;
+    position: fixed;
+    /*align-items: center;*/
+}
+.social-list {
+    list-style: none;
+    padding: 0;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+}
+.social-link{
+    font-size: 2rem;
+    color: black;
+    transition: .3s;
+}
+.social-link:hover{
+    color: darkorange;
+}
+.line{
+    height: .2rem;
+    width: 2.5rem;
+    background-color: black;
+    margin-bottom: .2rem;
+}
