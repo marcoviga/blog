@@ -1,0 +1,139 @@
+@import "nav.css";
+
+html, body{
+    font-size: 10px;
+    background-color: white;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.container {
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"nav"
+                        "title"
+                        "content";
+    gap: 7px;
+}
+.contactme-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "contactme-name"
+            "contactme-email"
+            "contactme-text"
+            "contactme-send";
+    grid-gap: 20px;
+}
+.image {
+    width: 300px;
+    height: auto;
+}
+@media(min-width: 600px) {
+    .image {
+        width: 900px;
+        height: auto;
+        max-width: 100%;
+    }
+    .contactme-container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+                "contactme-name contactme-text"
+                "contactme-email contactme-text"
+                "contactme-send contactme-send";
+    }
+
+}
+.title {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: 0.08em;
+}
+.content{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 2rem;
+    align-items: center;
+    margin: 20px;
+}
+.h2{
+    text-decoration: none;
+    color: black;
+}
+a {
+    color: black;
+    text-decoration: None;
+}
+.contactme{
+    margin: 10px;
+    display: flex;
+    font-size: 5rem;
+    color: whitesmoke;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    border-radius: 15px;
+    background-color: lightgray;
+    size: 70px;
+    padding: 10%;
+}
+#contactme-name {
+    grid-area: contactme-name;
+}
+#contactme-email{
+    grid-area: contactme-email;
+}
+#contactme-text{
+    grid-area: contactme-text;
+}
+#contactme-send{
+    grid-area: contactme-send;
+}
+input[type=text] {
+    width: 80%;
+    height: 100%;
+    padding: 15px 22px;
+    /*margin: 10px 5px;*/
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #999;
+}
+input[type=submit] {
+    width: 20%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    /*padding: 18px 36px;*/
+    text-decoration: none;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px black;
+
+}
+#contactme-text-area{
+    resize: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 1px black;
+}
